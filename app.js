@@ -80,7 +80,7 @@ var calculate = () => {
             }
         }
         // if (!radios[k].checked) {
-        //     alert("please select options")
+            //     alert("please select options")
         //     return;
         // }
     }
@@ -91,6 +91,8 @@ var calculate = () => {
     console.log(score);
     resultSp.innerText = "  " + score;
     resultDiv.innerText = "Your score is : " + "";
+    var anchor = document.getElementsByTagName("a")[0];
+    anchor.style.display = "none";
 }
 
 var qopDiv = document.getElementsByClassName("qopDiv")[0];
@@ -113,9 +115,9 @@ for (var i = 0; i < data.length; i++) {
     var qqbrDiv = document.createElement("br");
     qDiv.appendChild(qqbrDiv);
     qDiv.appendChild(qbrDiv);
-
+    
     qopDiv.appendChild(qDiv);
-
+    
     var opDiv = document.createElement("div");
     opDiv.setAttribute("class", "opDiv");
     //    mainDiv.appendChild(opDiv);
@@ -133,3 +135,14 @@ for (var i = 0; i < data.length; i++) {
     // var qopbrDiv = document.createElement("br");
     // qopDiv.appendChild( qopbrDiv);
 }
+// var array = ["5px 3px 13px rgb(255, 64, 64)","5px 3px 13px rgb(156, 92, 92)","5px 3px 13px rgb(142, 142, 248)"];
+// var count = 0 ;
+// function changeColor() {
+//     if(count > 2){
+//             count = 0 ;
+//            }
+//            qopDiv.style.boxshadow = "5px 3px 13px rgb(255, 64, 64)";
+//        qopDiv.style.box-shadow == "array[count]" ;
+//        count++
+// }
+// changeColor();
